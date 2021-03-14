@@ -28,5 +28,7 @@ camelCase('EquipmentClass name')
 ```
 
 ### toSafeInteger
-### cloneDeep
 
+
+### cloneDeep
+deep 복사
