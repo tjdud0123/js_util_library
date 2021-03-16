@@ -29,6 +29,18 @@ camelCase('EquipmentClass name')
 
 ### toSafeInteger
 
+console.log(toSafeInteger(3.2));
+console.log(toSafeInteger(Number.MIN_VALUE));
+console.log(toSafeInteger(Number.MAX_VALUE));
+console.log(toSafeInteger(Infinity));
+console.log(toSafeInteger('3.2'));
+console.log(toSafeInteger('321'));
+console.log(toSafeInteger('sdadw'));
+console.log(toSafeInteger(NaN));
+console.log(toSafeInteger(0.001));
+console.log(toSafeInteger(0.00111111111111111));
+console.log(toSafeInteger(1.99999999999999));
+console.log(toSafeInteger(0.000000000000000000000000000009));
 
 ### cloneDeep
 deep 복사
