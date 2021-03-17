@@ -36,18 +36,18 @@ console.log('isSame?', object === copyedObject);
 console.log('//--------------//')
 
 
-function deepCopy(data) {
+function cloneDeep(data) {
     if (!data || typeof(data) !== "object") {
       return data;
     }
     
     if (Array.isArray(data)){ // 배열일 때
-        return data.map(function(el){return deepCopy(el);});
+        return data.map(function(el){return cloneDeep(el);});
     }
     
     let copy = {}; // 객체일 때
     for(let key in data) {
-      copy[key] = deepCopy(data[key]);
+      copy[key] = cloneDeep(data[key]);
     }
   return copy;
 }
