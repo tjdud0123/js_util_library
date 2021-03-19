@@ -46,6 +46,7 @@ console.log(toSafeInteger(0.000000000000000000000000000009));
 ### cloneDeep
 deep 복사
 
+```js
 console.log('//------array Test--------//')
 var Arr = [{ 'a': 1 }, { 'b': 2 }, [1, 2, {'c': 100, 'd': 123}]];
 //var copyedArr = Arr;
@@ -82,3 +83,4 @@ console.log('Data', object);
 console.log('copyedData', copyedObject);
 console.log('isSame?', object === copyedObject);
 console.log('//--------------//')
+```
