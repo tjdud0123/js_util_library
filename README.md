@@ -17,13 +17,13 @@ console.log(camelCase("Equipment Class Name")); // equipmentClassName
 ### kebabCase
 
 ```js
-camelCase("equipment class name")
+console.log(camelCase("equipment class name"));
 // => 'equipment-class-name'
-camelCase('-foo-bar-')
+console.log(camelCase('-foo-bar-'));
 // => 'foo-bar'
-camelCase('__FOO_0BAR__');
+console.log(camelCase('__FOO_0BAR__'));
 // => 'foo-0-bar'
-camelCase('EquipmentClass name')
+console.log(camelCase('EquipmentClass name'));
 // => 'equipment-class-name'
 ```
 
