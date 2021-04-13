@@ -5,3 +5,13 @@ const getDiff = function (startTime, endTime) {
     const diffHour = Math.floor(diffTstmp / 1000 / 3600);
     return { diffMin, diffHour };
 },
+
+              // 대상이 어제인지 반환
+const getIsYesterday = function (insertedTstmp, curTstmp) {
+    let yesterday = new Date(curTstmp);
+    yesterday.setDate(yesterday.getDate() - 1); // 어제
+    const yesterdayStr = yesterday.toDateString();
+    let insertedDate = new Date(insertedTstmp); // 내일 자정
+    const insertedDateStr = insertedDate.toDateString();
+    return yesterdayStr === insertedDateStr;
+},
