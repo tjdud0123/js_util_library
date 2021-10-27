@@ -6,7 +6,7 @@ const getDiff = function (startTime, endTime) {
     return { diffMin, diffHour };
 },
 
-              // 대상이 어제인지 반환
+// 대상이 어제인지 반환
 const getIsYesterday = function (insertedTstmp, curTstmp) {
     let yesterday = new Date(curTstmp);
     yesterday.setDate(yesterday.getDate() - 1); // 어제
@@ -15,3 +15,8 @@ const getIsYesterday = function (insertedTstmp, curTstmp) {
     const insertedDateStr = insertedDate.toDateString();
     return yesterdayStr === insertedDateStr;
 },
+
+// date 타입 확인
+if(!isNaN(date.getTime())) {
+    console.log('valid Date Type')
+}
